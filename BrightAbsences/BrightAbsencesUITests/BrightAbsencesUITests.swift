@@ -1,13 +1,13 @@
 //
-//  EnvironmentSettingsUITests.swift
-//  EnvironmentSettingsUITests
+//  BrightAbsencesUITests.swift
+//  BrightAbsencesUITests
 //
-//  Created by Tony Phan on 06/01/2026.
+//  Created by Umair on 06/08/2026.
 //
 
 import XCTest
 
-final class EnvironmentSettingsUITests: XCTestCase {
+final class BrightAbsencesUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

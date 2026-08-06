@@ -7,75 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		C90913522F0D5A510058D124 /* PBXContainerItemProxy */ = {
+		80AFD0B93024D1AD00331DFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C90913332F0D5A4F0058D124 /* Project object */;
+			containerPortal = 80AFD0A33024D1AB00331DFF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C909133A2F0D5A4F0058D124;
-			remoteInfo = EnvironmentSettings;
+			remoteGlobalIDString = 80AFD0AA3024D1AB00331DFF;
+			remoteInfo = BrightAbsences;
 		};
-		C909135C2F0D5A510058D124 /* PBXContainerItemProxy */ = {
+		80AFD0C33024D1AD00331DFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C90913332F0D5A4F0058D124 /* Project object */;
+			containerPortal = 80AFD0A33024D1AB00331DFF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C909133A2F0D5A4F0058D124;
-			remoteInfo = EnvironmentSettings;
+			remoteGlobalIDString = 80AFD0AA3024D1AB00331DFF;
+			remoteInfo = BrightAbsences;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C909133B2F0D5A4F0058D124 /* EnvironmentSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C90913512F0D5A510058D124 /* EnvironmentSettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C909135B2F0D5A510058D124 /* EnvironmentSettingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSettingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AFD0AB3024D1AB00331DFF /* BrightAbsences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightAbsences.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AFD0B83024D1AD00331DFF /* BrightAbsencesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightAbsencesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AFD0C23024D1AD00331DFF /* BrightAbsencesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightAbsencesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C90913632F0D5A510058D124 /* Exceptions for "EnvironmentSettings" folder in "EnvironmentSettings" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C909133A2F0D5A4F0058D124 /* EnvironmentSettings */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C909133D2F0D5A4F0058D124 /* EnvironmentSettings */ = {
+		80AFD0AD3024D1AB00331DFF /* BrightAbsences */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C90913632F0D5A510058D124 /* Exceptions for "EnvironmentSettings" folder in "EnvironmentSettings" target */,
-			);
-			path = EnvironmentSettings;
+			path = BrightAbsences;
 			sourceTree = "<group>";
 		};
-		C90913542F0D5A510058D124 /* EnvironmentSettingsTests */ = {
+		80AFD0BB3024D1AD00331DFF /* BrightAbsencesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EnvironmentSettingsTests;
+			path = BrightAbsencesTests;
 			sourceTree = "<group>";
 		};
-		C909135E2F0D5A510058D124 /* EnvironmentSettingsUITests */ = {
+		80AFD0C53024D1AD00331DFF /* BrightAbsencesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EnvironmentSettingsUITests;
+			path = BrightAbsencesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C90913382F0D5A4F0058D124 /* Frameworks */ = {
+		80AFD0A83024D1AB00331DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C909134E2F0D5A510058D124 /* Frameworks */ = {
+		80AFD0B53024D1AD00331DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C90913582F0D5A510058D124 /* Frameworks */ = {
+		80AFD0BF3024D1AD00331DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C90913322F0D5A4F0058D124 = {
+		80AFD0A23024D1AB00331DFF = {
 			isa = PBXGroup;
 			children = (
-				C909133D2F0D5A4F0058D124 /* EnvironmentSettings */,
-				C90913542F0D5A510058D124 /* EnvironmentSettingsTests */,
-				C909135E2F0D5A510058D124 /* EnvironmentSettingsUITests */,
-				C909133C2F0D5A4F0058D124 /* Products */,
+				80AFD0AD3024D1AB00331DFF /* BrightAbsences */,
+				80AFD0BB3024D1AD00331DFF /* BrightAbsencesTests */,
+				80AFD0C53024D1AD00331DFF /* BrightAbsencesUITests */,
+				80AFD0AC3024D1AB00331DFF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C909133C2F0D5A4F0058D124 /* Products */ = {
+		80AFD0AC3024D1AB00331DFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C909133B2F0D5A4F0058D124 /* EnvironmentSettings.app */,
-				C90913512F0D5A510058D124 /* EnvironmentSettingsTests.xctest */,
-				C909135B2F0D5A510058D124 /* EnvironmentSettingsUITests.xctest */,
+				80AFD0AB3024D1AB00331DFF /* BrightAbsences.app */,
+				80AFD0B83024D1AD00331DFF /* BrightAbsencesTests.xctest */,
+				80AFD0C23024D1AD00331DFF /* BrightAbsencesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C909133A2F0D5A4F0058D124 /* EnvironmentSettings */ = {
+		80AFD0AA3024D1AB00331DFF /* BrightAbsences */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C90913642F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettings" */;
+			buildConfigurationList = 80AFD0CC3024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsences" */;
 			buildPhases = (
-				C90913372F0D5A4F0058D124 /* Sources */,
-				C90913382F0D5A4F0058D124 /* Frameworks */,
-				C90913392F0D5A4F0058D124 /* Resources */,
+				80AFD0A73024D1AB00331DFF /* Sources */,
+				80AFD0A83024D1AB00331DFF /* Frameworks */,
+				80AFD0A93024D1AB00331DFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C909133D2F0D5A4F0058D124 /* EnvironmentSettings */,
+				80AFD0AD3024D1AB00331DFF /* BrightAbsences */,
 			);
-			name = EnvironmentSettings;
+			name = BrightAbsences;
 			packageProductDependencies = (
 			);
-			productName = EnvironmentSettings;
-			productReference = C909133B2F0D5A4F0058D124 /* EnvironmentSettings.app */;
+			productName = BrightAbsences;
+			productReference = 80AFD0AB3024D1AB00331DFF /* BrightAbsences.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C90913502F0D5A510058D124 /* EnvironmentSettingsTests */ = {
+		80AFD0B73024D1AD00331DFF /* BrightAbsencesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C90913692F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettingsTests" */;
+			buildConfigurationList = 80AFD0CF3024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsencesTests" */;
 			buildPhases = (
-				C909134D2F0D5A510058D124 /* Sources */,
-				C909134E2F0D5A510058D124 /* Frameworks */,
-				C909134F2F0D5A510058D124 /* Resources */,
+				80AFD0B43024D1AD00331DFF /* Sources */,
+				80AFD0B53024D1AD00331DFF /* Frameworks */,
+				80AFD0B63024D1AD00331DFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C90913532F0D5A510058D124 /* PBXTargetDependency */,
+				80AFD0BA3024D1AD00331DFF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C90913542F0D5A510058D124 /* EnvironmentSettingsTests */,
+				80AFD0BB3024D1AD00331DFF /* BrightAbsencesTests */,
 			);
-			name = EnvironmentSettingsTests;
+			name = BrightAbsencesTests;
 			packageProductDependencies = (
 			);
-			productName = EnvironmentSettingsTests;
-			productReference = C90913512F0D5A510058D124 /* EnvironmentSettingsTests.xctest */;
+			productName = BrightAbsencesTests;
+			productReference = 80AFD0B83024D1AD00331DFF /* BrightAbsencesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C909135A2F0D5A510058D124 /* EnvironmentSettingsUITests */ = {
+		80AFD0C13024D1AD00331DFF /* BrightAbsencesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C909136C2F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettingsUITests" */;
+			buildConfigurationList = 80AFD0D23024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsencesUITests" */;
 			buildPhases = (
-				C90913572F0D5A510058D124 /* Sources */,
-				C90913582F0D5A510058D124 /* Frameworks */,
-				C90913592F0D5A510058D124 /* Resources */,
+				80AFD0BE3024D1AD00331DFF /* Sources */,
+				80AFD0BF3024D1AD00331DFF /* Frameworks */,
+				80AFD0C03024D1AD00331DFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C909135D2F0D5A510058D124 /* PBXTargetDependency */,
+				80AFD0C43024D1AD00331DFF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C909135E2F0D5A510058D124 /* EnvironmentSettingsUITests */,
+				80AFD0C53024D1AD00331DFF /* BrightAbsencesUITests */,
 			);
-			name = EnvironmentSettingsUITests;
+			name = BrightAbsencesUITests;
 			packageProductDependencies = (
 			);
-			productName = EnvironmentSettingsUITests;
-			productReference = C909135B2F0D5A510058D124 /* EnvironmentSettingsUITests.xctest */;
+			productName = BrightAbsencesUITests;
+			productReference = 80AFD0C23024D1AD00331DFF /* BrightAbsencesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C90913332F0D5A4F0058D124 /* Project object */ = {
+		80AFD0A33024D1AB00331DFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					C909133A2F0D5A4F0058D124 = {
-						CreatedOnToolsVersion = 26.2;
+					80AFD0AA3024D1AB00331DFF = {
+						CreatedOnToolsVersion = 26.3;
 					};
-					C90913502F0D5A510058D124 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = C909133A2F0D5A4F0058D124;
+					80AFD0B73024D1AD00331DFF = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 80AFD0AA3024D1AB00331DFF;
 					};
-					C909135A2F0D5A510058D124 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = C909133A2F0D5A4F0058D124;
+					80AFD0C13024D1AD00331DFF = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 80AFD0AA3024D1AB00331DFF;
 					};
 				};
 			};
-			buildConfigurationList = C90913362F0D5A4F0058D124 /* Build configuration list for PBXProject "EnvironmentSettings" */;
+			buildConfigurationList = 80AFD0A63024D1AB00331DFF /* Build configuration list for PBXProject "BrightAbsences" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C90913322F0D5A4F0058D124;
+			mainGroup = 80AFD0A23024D1AB00331DFF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C909133C2F0D5A4F0058D124 /* Products */;
+			productRefGroup = 80AFD0AC3024D1AB00331DFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C909133A2F0D5A4F0058D124 /* EnvironmentSettings */,
-				C90913502F0D5A510058D124 /* EnvironmentSettingsTests */,
-				C909135A2F0D5A510058D124 /* EnvironmentSettingsUITests */,
+				80AFD0AA3024D1AB00331DFF /* BrightAbsences */,
+				80AFD0B73024D1AD00331DFF /* BrightAbsencesTests */,
+				80AFD0C13024D1AD00331DFF /* BrightAbsencesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C90913392F0D5A4F0058D124 /* Resources */ = {
+		80AFD0A93024D1AB00331DFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C909134F2F0D5A510058D124 /* Resources */ = {
+		80AFD0B63024D1AD00331DFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C90913592F0D5A510058D124 /* Resources */ = {
+		80AFD0C03024D1AD00331DFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C90913372F0D5A4F0058D124 /* Sources */ = {
+		80AFD0A73024D1AB00331DFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C909134D2F0D5A510058D124 /* Sources */ = {
+		80AFD0B43024D1AD00331DFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C90913572F0D5A510058D124 /* Sources */ = {
+		80AFD0BE3024D1AD00331DFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,82 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C90913532F0D5A510058D124 /* PBXTargetDependency */ = {
+		80AFD0BA3024D1AD00331DFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C909133A2F0D5A4F0058D124 /* EnvironmentSettings */;
-			targetProxy = C90913522F0D5A510058D124 /* PBXContainerItemProxy */;
+			target = 80AFD0AA3024D1AB00331DFF /* BrightAbsences */;
+			targetProxy = 80AFD0B93024D1AD00331DFF /* PBXContainerItemProxy */;
 		};
-		C909135D2F0D5A510058D124 /* PBXTargetDependency */ = {
+		80AFD0C43024D1AD00331DFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C909133A2F0D5A4F0058D124 /* EnvironmentSettings */;
-			targetProxy = C909135C2F0D5A510058D124 /* PBXContainerItemProxy */;
+			target = 80AFD0AA3024D1AB00331DFF /* BrightAbsences */;
+			targetProxy = 80AFD0C33024D1AD00331DFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C90913652F0D5A510058D124 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EnvironmentSettings/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C90913662F0D5A510058D124 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EnvironmentSettings/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C90913672F0D5A510058D124 /* Debug */ = {
+		80AFD0CA3024D1AD00331DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		C90913682F0D5A510058D124 /* Release */ = {
+		80AFD0CB3024D1AD00331DFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -463,56 +388,78 @@
 			};
 			name = Release;
 		};
-		C909136A2F0D5A510058D124 /* Debug */ = {
+		80AFD0CD3024D1AD00331DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettingsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentSettings.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnvironmentSettings";
 			};
 			name = Debug;
 		};
-		C909136B2F0D5A510058D124 /* Release */ = {
+		80AFD0CE3024D1AD00331DFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettingsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentSettings.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EnvironmentSettings";
 			};
 			name = Release;
 		};
-		C909136D2F0D5A510058D124 /* Debug */ = {
+		80AFD0D03024D1AD00331DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettingsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -520,18 +467,20 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EnvironmentSettings;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightAbsences.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrightAbsences";
 			};
 			name = Debug;
 		};
-		C909136E2F0D5A510058D124 /* Release */ = {
+		80AFD0D13024D1AD00331DFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brighthr.EnvironmentSettingsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -539,50 +488,88 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EnvironmentSettings;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightAbsences.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrightAbsences";
+			};
+			name = Release;
+		};
+		80AFD0D33024D1AD00331DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsencesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrightAbsences;
+			};
+			name = Debug;
+		};
+		80AFD0D43024D1AD00331DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systems.BrightAbsencesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrightAbsences;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C90913362F0D5A4F0058D124 /* Build configuration list for PBXProject "EnvironmentSettings" */ = {
+		80AFD0A63024D1AB00331DFF /* Build configuration list for PBXProject "BrightAbsences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C90913672F0D5A510058D124 /* Debug */,
-				C90913682F0D5A510058D124 /* Release */,
+				80AFD0CA3024D1AD00331DFF /* Debug */,
+				80AFD0CB3024D1AD00331DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C90913642F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettings" */ = {
+		80AFD0CC3024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C90913652F0D5A510058D124 /* Debug */,
-				C90913662F0D5A510058D124 /* Release */,
+				80AFD0CD3024D1AD00331DFF /* Debug */,
+				80AFD0CE3024D1AD00331DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C90913692F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettingsTests" */ = {
+		80AFD0CF3024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsencesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C909136A2F0D5A510058D124 /* Debug */,
-				C909136B2F0D5A510058D124 /* Release */,
+				80AFD0D03024D1AD00331DFF /* Debug */,
+				80AFD0D13024D1AD00331DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C909136C2F0D5A510058D124 /* Build configuration list for PBXNativeTarget "EnvironmentSettingsUITests" */ = {
+		80AFD0D23024D1AD00331DFF /* Build configuration list for PBXNativeTarget "BrightAbsencesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C909136D2F0D5A510058D124 /* Debug */,
-				C909136E2F0D5A510058D124 /* Release */,
+				80AFD0D33024D1AD00331DFF /* Debug */,
+				80AFD0D43024D1AD00331DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C90913332F0D5A4F0058D124 /* Project object */;
+	rootObject = 80AFD0A33024D1AB00331DFF /* Project object */;
 }

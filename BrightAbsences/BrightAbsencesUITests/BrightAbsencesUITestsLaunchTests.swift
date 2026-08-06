@@ -1,13 +1,13 @@
 //
-//  EnvironmentSettingsUITestsLaunchTests.swift
-//  EnvironmentSettingsUITests
+//  BrightAbsencesUITestsLaunchTests.swift
+//  BrightAbsencesUITests
 //
-//  Created by Tony Phan on 06/01/2026.
+//  Created by Umair on 06/08/2026.
 //
 
 import XCTest
 
-final class EnvironmentSettingsUITestsLaunchTests: XCTestCase {
+final class BrightAbsencesUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
