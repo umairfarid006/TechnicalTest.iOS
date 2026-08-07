@@ -11,7 +11,7 @@ import SwiftUI
 struct BrightAbsencesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AbsencesListView(viewModel: AbsencesListViewModel(absenceList: [], manager: NetworkManager(session: URLSession.shared)))
         }
     }
 }

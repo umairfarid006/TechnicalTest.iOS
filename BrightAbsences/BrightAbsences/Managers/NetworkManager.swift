@@ -18,7 +18,7 @@ final class NetworkManager{
     var decoder : JSONDecoder
     var session : URLSessionProtocol
     
-    init(encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder(), session: URLSessionProtocol) {
+    init(encoder: JSONEncoder = JSONEncoder(), decoder: JSONDecoder = JSONDecoder(), session: URLSessionProtocol = URLSession.shared) {
         self.encoder = encoder
         self.decoder = decoder
         self.session = session
