@@ -18,21 +18,34 @@ struct AbsencesListView <vm : AbsencesListViewModelProtocol>: View {
     
     var body: some View {
         NavigationStack {
-            List(absencesList, id:\.id) { absence in
-                AbsenceRowView(absence: absence)
+            Group {
+                if viewModel.isLoading {
+                    ProgressView("Loading...")
+                } else if let errorMessage = viewModel.errorMessage {
+                    ErrorView(message: errorMessage) {
+                        Task {
+                            await viewModel.fetchAbsenceList()
+                            absencesList = viewModel.absenceList
+                        }
+                    }
+                } else {
+                    List(absencesList, id:\.id) { absence in
+                        AbsenceRowView(absence: absence)
+                    }
+                    .navigationTitle("Absence List")
+                    .searchable(
+                        text: $searchText,
+                        prompt: "Search employee"
+                    )
+                    .onChange(of: searchText, { oldValue, newValue in
+                        filterAbsences(using: newValue)
+                    })
+                }
             }
-            .navigationTitle("Absence List")
-            .task {
-                await viewModel.fetchAbsenceList()
-                absencesList = viewModel.absenceList
-            }
-            .searchable(
-                text: $searchText,
-                prompt: "Search employee"
-            )
-            .onChange(of: searchText, { oldValue, newValue in
-                filterAbsences(using: newValue)
-            })
+        }
+        .task {
+            await viewModel.fetchAbsenceList()
+            absencesList = viewModel.absenceList
         }
     }
 
