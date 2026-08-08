@@ -1,5 +1,5 @@
 //
-//  AbsencesListViewSnapshotTests.swift
+//  AbsencesListErrorViewSnapshotTests.swift
 //  BrightAbsences
 //
 //  Created by Umair on 08/08/2026.
@@ -10,11 +10,11 @@ import SnapshotTesting
 import SwiftUI
 @testable import BrightAbsences
 
-final class AbsencesListViewSnapshotTests: XCTestCase {
-    func test_absenceList_loadedState() {
+final class AbsencesListErrorViewSnapshotTests: XCTestCase {
+    func test_absenceList_when_Falilure() {
         let absences: [Absence] = [.mock, .mock, .mock]
         let viewModel = MockAbsencesListViewModel()
-        viewModel.absenceList = absences
+        viewModel.errorMessage = "Not able to load data"
         let view = AbsencesListView(
             viewModel: viewModel,
             absencesList: absences

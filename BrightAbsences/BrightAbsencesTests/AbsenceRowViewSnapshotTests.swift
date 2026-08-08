@@ -11,7 +11,6 @@ import SwiftUI
 @testable import BrightAbsences
 
 final class AbsenceRowViewSnapshotTests: XCTestCase {
-
     func test_absenceRow() {
         let view = AbsenceRowView(absence: .mock)
         assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
