@@ -15,8 +15,11 @@ struct AbsenceRowView: View {
                 VStack(alignment: .leading) {
                     Text(absence.employee.fullName)
                         .bold()
-                    Text(absence.absenceType)
-                    Text("\(absence.days) days")
+                    Text(absence.absenceType.title)
+                    HStack {
+                        Text("\(absence.startDate.formattedDate) - \(absence.startDate.addingDays(absence.days))")
+                        
+                    }
                 }
                 
                 if absence.hasConflict {
