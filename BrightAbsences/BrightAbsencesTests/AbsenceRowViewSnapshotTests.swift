@@ -15,4 +15,9 @@ final class AbsenceRowViewSnapshotTests: XCTestCase {
         let view = AbsenceRowView(absence: .mock)
         assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
     }
+    
+    func test_absenceRow_when_conflict() {
+        let view = AbsenceRowView(absence: .mockWithConflict)
+        assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
+    }
 }

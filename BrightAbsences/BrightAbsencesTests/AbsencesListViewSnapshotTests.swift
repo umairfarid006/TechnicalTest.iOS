@@ -12,7 +12,7 @@ import SwiftUI
 
 final class AbsencesListViewSnapshotTests: XCTestCase {
     func test_absenceList_loadedState() {
-        let absences: [Absence] = [.mock, .mock, .mock]
+        let absences: [Absence] = [.mock, .mock, .mock, .mockWithConflict, .mock]
         let viewModel = MockAbsencesListViewModel()
         viewModel.absenceList = absences
         let view = AbsencesListView(

@@ -11,10 +11,27 @@ struct AbsenceRowView: View {
     let absence: Absence
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(absence.employee.fullName)
-                .bold()
-            Text(absence.absenceType)
-            Text("\(absence.days) days")
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(absence.employee.fullName)
+                        .bold()
+                    Text(absence.absenceType)
+                    Text("\(absence.days) days")
+                }
+                
+                if absence.hasConflict {
+                    Spacer()
+                    VStack {
+                        Text("Conflict")
+                            .bold()
+                            .foregroundColor(.red)
+                            .padding()
+                        
+                    }
+                    .background(Color.red.opacity(0.12))
+                    .cornerRadius(8)
+                }
+            }
         }
     }
 }

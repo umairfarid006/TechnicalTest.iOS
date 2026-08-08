@@ -12,6 +12,16 @@ struct Absence: Decodable{
     let absenceType: String
     let approved: Bool
     let employee: Employee
+    var hasConflict: Bool = false
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case startDate
+        case days
+        case absenceType
+        case approved
+        case employee
+    }
 }
 
 struct Employee: Decodable{
@@ -32,6 +42,18 @@ extension Absence {
             absenceType: "Annual Leave",
             approved: true,
             employee: .mock
+        )
+    }
+    
+    static var mockWithConflict: Absence {
+        Absence(
+            id: 2,
+            startDate: "2026-08-07",
+            days: 3,
+            absenceType: "Annual Leave",
+            approved: true,
+            employee: .mock,
+            hasConflict: true
         )
     }
 }

@@ -21,6 +21,7 @@ final class AbsencesListViewModel: ObservableObject, AbsencesListViewModelProtoc
     // service end points
     enum endopoints : String{
         case absences = "absences"
+        case conflict = "conflict"
     }
     
     // properties
@@ -42,8 +43,35 @@ final class AbsencesListViewModel: ObservableObject, AbsencesListViewModelProtoc
         }
         do{
             absenceList = try await manager.executeRequest(urlString: AppConstants.baseURL + endopoints.absences.rawValue, params: nil)
+            absenceList = await updateConflictStatus(absences: absenceList)
         }catch{
             errorMessage = error.localizedDescription
+        }
+    }
+    
+    private func updateConflictStatus(absences: [Absence]) async -> [Absence] {
+        await withTaskGroup(of: (Int, Absence).self) { group in
+            for (index, absence) in absences.enumerated() {
+                group.addTask {
+                    var updatedAbsence = absence
+                    updatedAbsence.hasConflict = await self.fetchConflicts(id: absence.id)
+                    return (index, updatedAbsence)
+                }
+            }
+            var results: [(Int, Absence)] = []
+            for await result in group {
+                results.append(result)
+            }
+            return results.sorted { $0.0 < $1.0 }.map { $0.1 }
+        }
+    }
+    
+    private func fetchConflicts(id: Int) async -> Bool {
+        do {
+            let conflict: Conflict = try await manager.executeRequest(urlString: AppConstants.baseURL + endopoints.conflict.rawValue + "/\(id)")
+            return conflict.conflicts
+        } catch {
+            return false
         }
     }
 }
