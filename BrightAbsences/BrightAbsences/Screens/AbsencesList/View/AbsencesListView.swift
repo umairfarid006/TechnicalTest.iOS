@@ -10,10 +10,11 @@ import SwiftUI
 struct AbsencesListView <vm : AbsencesListViewModelProtocol>: View {
     @StateObject private var viewModel : vm
     @State private var searchText = ""
-    @State var absencesList : [Absence] = []
+    @State var absencesList : [Absence]
     
-    init(viewModel: vm) {
+    init(viewModel: vm, absencesList: [Absence] = []) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        _absencesList = State(initialValue: absencesList)
     }
     
     var body: some View {
