@@ -14,6 +14,7 @@ protocol AbsencesListViewModelProtocol: ObservableObject{
     var errorMessage : String? { get set }
     var isLoading: Bool { get set }
     func fetchAbsenceList() async
+    func sortAbsences(option: AbsenceSortOption) -> [Absence]
 }
 
 final class AbsencesListViewModel: ObservableObject, AbsencesListViewModelProtocol{
@@ -72,6 +73,26 @@ final class AbsencesListViewModel: ObservableObject, AbsencesListViewModelProtoc
             return conflict.conflicts
         } catch {
             return false
+        }
+    }
+    
+    func sortAbsences(option: AbsenceSortOption) -> [Absence] {
+        absenceList.sorted { lhs, rhs in
+            switch option {
+            case .date:
+                return (lhs.startDate.toDate ?? .distantFuture)
+                    < (rhs.startDate.toDate ?? .distantFuture)
+
+            case .absenceType:
+                return lhs.absenceType.title
+                    .localizedCaseInsensitiveCompare(rhs.absenceType.title)
+                    == .orderedAscending
+
+            case .name:
+                return lhs.employee.fullName
+                    .localizedCaseInsensitiveCompare(rhs.employee.fullName)
+                    == .orderedAscending
+            }
         }
     }
 }

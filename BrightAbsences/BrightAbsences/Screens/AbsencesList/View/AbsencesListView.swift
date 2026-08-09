@@ -41,6 +41,29 @@ struct AbsencesListView <vm : AbsencesListViewModelProtocol>: View {
                     .onChange(of: searchText, { oldValue, newValue in
                         filterAbsences(using: newValue)
                     })
+                    .toolbar {
+                        ToolbarItem {
+                            Menu {
+                                Button("Sort by date") {
+                                    absencesList = viewModel.sortAbsences(option: .date)
+                                }
+
+                                Button("Sort by absence Type") {
+                                    absencesList = viewModel.sortAbsences(option: .absenceType)
+                                }
+
+                                Button("Sort by Name") {
+                                    absencesList = viewModel.sortAbsences(option: .name)
+                                }
+                                
+                                Button("Show All") {
+                                    absencesList = viewModel.absenceList
+                                }
+                            } label: {
+                                Image(systemName: "ellipsis")
+                            }
+                        }
+                    }
                 }
             }
         }

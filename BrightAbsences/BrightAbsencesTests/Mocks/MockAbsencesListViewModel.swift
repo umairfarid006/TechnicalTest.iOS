@@ -10,11 +10,12 @@ import Combine
 
 final class MockAbsencesListViewModel:
     AbsencesListViewModelProtocol {
-
     @Published var absenceList: [Absence] = []
 
     var errorMessage: String?
     var isLoading: Bool = false
 
     func fetchAbsenceList() async { }
+    func sortAbsences(option: BrightAbsences.AbsenceSortOption) -> [BrightAbsences.Absence] { return [] }
+
 }

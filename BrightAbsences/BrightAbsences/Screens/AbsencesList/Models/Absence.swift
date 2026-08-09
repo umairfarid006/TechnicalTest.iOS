@@ -54,7 +54,7 @@ extension Absence {
     static var mock: Absence {
         Absence(
             id: 1,
-            startDate: "2026-08-07",
+            startDate: "2021-05-07T06:59:09.969Z",
             days: 3,
             absenceType: .annualLeave,
             approved: true,
@@ -65,7 +65,7 @@ extension Absence {
     static var mockWithConflict: Absence {
         Absence(
             id: 2,
-            startDate: "2026-08-07",
+            startDate: "2021-05-07T06:59:09.969Z",
             days: 3,
             absenceType: .annualLeave,
             approved: true,
