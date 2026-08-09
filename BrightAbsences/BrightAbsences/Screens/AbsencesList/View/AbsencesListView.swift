@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AbsencesListView <vm : AbsencesListViewModelProtocol>: View {
+    @EnvironmentObject private var coordinator : NavigationCoordinator
     @StateObject private var viewModel : vm
     @State private var searchText = ""
     @State var absencesList : [Absence]
@@ -18,58 +19,64 @@ struct AbsencesListView <vm : AbsencesListViewModelProtocol>: View {
     }
     
     var body: some View {
-        NavigationStack {
-            Group {
-                if viewModel.isLoading {
-                    ProgressView("Loading...")
-                } else if let errorMessage = viewModel.errorMessage {
-                    ErrorView(message: errorMessage) {
-                        Task {
-                            await viewModel.fetchAbsenceList()
-                            absencesList = viewModel.absenceList
-                        }
+        Group {
+            if viewModel.isLoading {
+                ProgressView("Loading...")
+            } else if let errorMessage = viewModel.errorMessage {
+                ErrorView(message: errorMessage) {
+                    Task {
+                        await viewModel.fetchAbsenceList()
+                        absencesList = viewModel.absenceList
                     }
-                } else {
-                    List(absencesList, id:\.id) { absence in
-                        AbsenceRowView(absence: absence)
-                    }
-                    .navigationTitle("Absence List")
-                    .searchable(
-                        text: $searchText,
-                        prompt: "Search employee"
-                    )
-                    .onChange(of: searchText, { oldValue, newValue in
-                        filterAbsences(using: newValue)
-                    })
-                    .toolbar {
-                        ToolbarItem {
-                            Menu {
-                                Button("Sort by date") {
-                                    absencesList = viewModel.sortAbsences(option: .date)
-                                }
-
-                                Button("Sort by absence Type") {
-                                    absencesList = viewModel.sortAbsences(option: .absenceType)
-                                }
-
-                                Button("Sort by Name") {
-                                    absencesList = viewModel.sortAbsences(option: .name)
-                                }
-                                
-                                Button("Show All") {
-                                    absencesList = viewModel.absenceList
-                                }
-                            } label: {
-                                Image(systemName: "ellipsis")
+                }
+            } else {
+                List(absencesList, id:\.id) { absence in
+                    AbsenceRowView(absence: absence)
+                        .onTapGesture {
+                            let employeeAbsences = absencesList.filter {
+                                $0.employee.fullName == absence.employee.fullName
                             }
+                            coordinator.push(.employeeAbsence(employeeAbsences))
+                        }
+                }
+                .navigationTitle("Absence List")
+                .searchable(
+                    text: $searchText,
+                    prompt: "Search employee"
+                )
+                .onChange(of: searchText, { oldValue, newValue in
+                    filterAbsences(using: newValue)
+                })
+                .toolbar {
+                    ToolbarItem {
+                        Menu {
+                            Button("Sort by date") {
+                                absencesList = viewModel.sortAbsences(option: .date)
+                            }
+                            
+                            Button("Sort by absence Type") {
+                                absencesList = viewModel.sortAbsences(option: .absenceType)
+                            }
+                            
+                            Button("Sort by Name") {
+                                absencesList = viewModel.sortAbsences(option: .name)
+                            }
+                            
+                            Button("Show All") {
+                                absencesList = viewModel.absenceList
+                            }
+                        } label: {
+                            Image(systemName: "ellipsis")
                         }
                     }
                 }
             }
         }
         .task {
-            await viewModel.fetchAbsenceList()
-            absencesList = viewModel.absenceList
+            if viewModel.absenceList.isEmpty {
+                await viewModel.fetchAbsenceList()
+                absencesList = viewModel.absenceList
+            }
         }
     }
 

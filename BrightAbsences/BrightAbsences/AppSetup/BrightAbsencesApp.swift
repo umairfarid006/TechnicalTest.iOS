@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BrightAbsencesApp: App {
+    @StateObject private var coordinator = NavigationCoordinator(path: NavigationPath())
     var body: some Scene {
         WindowGroup {
-            AbsencesListView(viewModel: AbsencesListViewModel(absenceList: [], manager: NetworkManager(session: URLSession.shared)))
+            RootView()
+                .environmentObject(coordinator)
         }
     }
 }
