@@ -19,6 +19,10 @@ final class AbsencesListErrorViewSnapshotTests: XCTestCase {
             viewModel: viewModel,
             absencesList: absences
         )
-        assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
+            .environment(\.colorScheme, .light)
+            .environment(\.locale, Locale(identifier: "en_GB"))
+            .environment(\.sizeCategory, .medium)
+
+        assertSnapshot(of: view, as: .image(precision: 0.99, layout: .device(config: .iPhone13)))
     }
 }

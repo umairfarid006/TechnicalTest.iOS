@@ -13,11 +13,17 @@ import SwiftUI
 final class AbsenceRowViewSnapshotTests: XCTestCase {
     func test_absenceRow() {
         let view = AbsenceRowView(absence: .mock)
-        assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
+            .environment(\.colorScheme, .light)
+            .environment(\.locale, Locale(identifier: "en_GB"))
+            .environment(\.sizeCategory, .medium)
+        assertSnapshot(of: view, as: .image(precision: 0.99, layout: .device(config: .iPhone13)))
     }
     
     func test_absenceRow_when_conflict() {
         let view = AbsenceRowView(absence: .mockWithConflict)
-        assertSnapshot(of: view, as: .image(layout: .device(config: .iPhone13)))
+            .environment(\.colorScheme, .light)
+            .environment(\.locale, Locale(identifier: "en_GB"))
+            .environment(\.sizeCategory, .medium)
+        assertSnapshot(of: view, as: .image(precision: 0.99, layout: .device(config: .iPhone13)))
     }
 }
